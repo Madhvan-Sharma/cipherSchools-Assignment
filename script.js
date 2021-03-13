@@ -8,7 +8,7 @@ submit.addEventListener('click', function(e){
     userName = document.getElementById('username').value;
     console.log(userName);
 
-    window.location.href= "/homepage.html?username="+userName;
+    window.location.href= "https://madhvan-sharma.github.io/cipherSchools-Assignment/homepage.html?username="+userName;
     // localStorage["username"] = userName;
     // window.location.href= "/homepage.html";
 
