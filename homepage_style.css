@@ -1,0 +1,438 @@
+body{
+	margin:0px;
+	color:darkslategrey;
+	font-family: sans-serif;
+}
+
+section{
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+}
+
+section:nth-child(even){
+	background-color:#d0d0d040;
+}
+
+
+/*SECTION HEADING*/
+.section-heading{
+	text-align:center;
+	font-size:1.98rem;
+	color:#2857a4;
+	font-family:sans-serif,serif;
+	margin-bottom: 75px;
+}
+
+/*HEADER*/
+
+#body-header{
+	height:65vh;
+	background-image: url("images/header.jpg");
+	background-size:cover;
+	background-position: center;
+	background-attachment: fixed;
+	opacity:0.8;
+	color:white;
+	overflow-wrap:break-word;
+}
+
+.horizontal-list{
+	list-style:none;
+	padding:0px;
+	margin-top:0px;
+}
+
+.horizontal-list li{
+	display:inline-block;
+	font-size:2vw;
+	padding:10px;
+	padding-top:30px;
+}
+
+.horizontal-list a{
+	color:white;
+	text-decoration:unset;
+	transition:color 0.8s;
+}
+
+.horizontal-list a:hover{
+	color:black;
+}
+
+#body-header h1{
+	font-size:6vw;
+	position:relative;
+	top:7%;
+}
+
+.text-center{
+	text-align:center;
+}
+
+.social-links li{
+	padding:0px 15px;
+	font-size:1.8vw;
+}
+
+/*.social-links ul{
+	position:relative;
+	top:10%;
+}*/
+
+/*ABOUT*/
+
+#about{
+	height: auto;
+	width:100%;
+	position:relative;
+	margin-bottom:75px;
+}
+
+#my-image{
+	height:12rem;
+	width:12rem;
+	margin:auto;
+	margin-top: -17vh;
+}
+
+#my-image img{
+	height:100%;
+	width:100%;
+}
+
+#about p{
+	width:50%;
+	margin:auto;
+	text-align:justify;
+	padding-top:30px;
+	font-size:1.2rem;
+}
+
+/*SKILLS*/
+#skills-display{
+	width:70%;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	margin-bottom:75px;
+}
+
+.skills-progress{
+	background-color:lightgrey;
+	width:200px;
+	height:34px;
+	border-radius:17px;
+	color:white;
+	margin:20px;
+	/*border:2px solid grey;*/
+	/*box-shadow: 0px 0px 2px 3px #C8C8C8;*/
+}
+
+/*Percentage Classes*/
+.skill-progressbar{
+	height: inherit;
+	width:0%;
+	border-radius:17px 0px 0px 17px; 
+}
+
+#cplusplus{
+	/* width:95%; */
+	background-color: #2857a4;
+}
+
+#html{
+	/* width:92%; */
+	background-color: #ec4d1c;
+}
+
+#css{
+	/* width:85%; */
+	background-color: #93738c;
+}
+
+#javascript{
+	/* width:60%; */
+	background-color: #0b8176;
+}
+
+#Nodejs{
+	/* width:40%; */
+	background-color: orange;
+}
+
+#mongoDB{
+	/* width:70%; */
+	background-color: #e91e63;
+}
+
+.skill-name{
+	display:inline-block;
+	margin-left:20px;
+	margin-top:9px;
+	font-weight:500;
+	font-size:1rem;
+}
+
+/*PORTFOLIO*/
+#portfolio-container{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content:space-around;
+}
+
+#portfolio-container > div{
+	width:280px;
+	height:280px;
+	border-radius: 20px;
+	margin:30px;
+}
+
+.portfolio-images{
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.image1{
+	background-image: url("images/portfolio-1.png");
+}
+
+.image2{
+	background-image: url("images/portfolio-2.png");
+}
+
+.portfolio-images:hover{
+	background-color: lightgrey;
+}
+
+.portfolio-text{
+	font-size:1.9rem;
+	text-align: center;
+	font-weight:700;
+	color:rgba(255,255,255,0);
+	display:block;
+	padding-top:135px;
+	transition: color 1s;
+}
+
+.portfolio-text:hover{
+	color:rgba(255,255,255,1);
+	/*color:black;*/
+	/*opacity:1;*/
+}
+
+
+/*CONTACT*/
+#contact{
+	background-image:linear-gradient(to right,#2857a4,#403066);
+	color:white;
+}
+
+#contact-container{
+	display:flex;
+	flex-wrap:wrap;
+	/*justify-content:space-around;*/
+	margin-bottom:40px;
+}
+
+#send-mail{
+	width:50%;
+}
+
+#send-mail *{
+	border:none;
+}
+
+#send-mail > form > *{
+	display:block;
+	background-color: transparent;
+	margin:auto;
+	margin-top:40px;
+	width:75%;
+	border-bottom:2px solid white;
+	font-size:1.1rem;
+	outline: none;
+	color:white;
+}
+
+
+#submit-button{
+	border:2px white solid;
+	font-size:1.4rem;
+	padding:10px 0px;
+	border-radius:2px;
+	color:white;
+	text-transform: uppercase;
+	font-weight:400;
+	max-width:200px;
+}
+
+#submit-button:hover{
+	background-color:white;
+	color:#2857a4;
+    cursor:pointer;
+}
+
+#my-info{
+	width:40%;
+	padding:20px;
+	font-size:1rem;
+}
+
+/*Work EXP*/
+.timeline{
+	width:75%;
+	position:relative;
+	/*border:2px black solid;*/
+	margin-bottom:75px;
+}
+
+.timeline-box{
+	position:relative;
+	width:40%;
+	/* left:5%; */
+	min-height:150px;
+	/*border:2px black solid;*/
+	margin:7px;
+	height:auto;
+	padding:3px 20px;
+}
+
+
+.timeline-box:nth-child(even){
+	left:53%;
+	/*display:inline-block;*/
+}
+
+.timeline-box-heading *{
+	display:block;
+	color:orange;
+	font-weight:700;
+	text-align: right;
+	padding-right:9px;
+}
+
+.timeline-box-heading{
+	display:inline-block;
+	width:50%;
+	position:absolute;
+	right:2%;
+}
+
+.timeline-box-content{
+	font-size:0.8rem;
+	text-align:justify;
+	padding-top:20px;
+}
+
+.timeline-box::before{
+	content:'';
+	display:inline-block;
+	width:80px;
+	height:80px;
+	padding-left:20px;
+	background-image:url("images/google-logo.png");
+	background-size:contain;
+	background-repeat: no-repeat;
+}
+
+.timeline-box::after{
+	content:"";
+	position:absolute;
+	border-radius:50%;
+	background-color:#2857a4;
+	top:50%;
+	left:111.7%;
+	width:0.8rem;
+	height:0.8rem;
+}
+
+.timeline-box:nth-child(even)::after{
+	left:-9.6%;
+}
+
+.timeline-divider{
+	position:absolute;
+	height:75%;
+	width:0;
+    top: 12%;
+    /*bottom: 14%;*/
+    left: 50%;
+    border-right: 2px dashed #0096fa6b;
+}
+
+.divider-icon{
+	font-size:2rem;
+	position:sticky;
+	top:0;
+	transform:rotate(90deg);
+	z-index:1;
+	/*color:darkslategrey;*/
+	color:#0e2d61;
+}
+
+
+/* Media queries */
+@media screen and (max-width:600px){
+	.timeline-divider{
+		left:10%;
+		height:80%;
+	}
+
+	.timeline-box{
+		left:12% !important;
+		width:80%;
+		margin:5% inherit;
+	}
+
+	.timeline-box::after{
+		left:-6%  !important;
+	}
+
+	html{
+		font-size:15px;
+	}
+
+	#body-header h1{
+		font-size:11vw;
+		position:relative;
+		top:15%;
+	}
+
+	.social-links{
+		position:relative;
+		top:15.8%;
+	}
+
+	.social-links li{
+		font-size:1.67rem;
+	}
+
+	#my-image{
+		margin-top:-13vh;
+	}
+
+	#about p{
+		width:90%;
+	}
+
+	#portfolio-container > div{
+		width:200px;
+		height:200px;
+		margin:1%;
+	}
+
+	.skills-progress{
+		width:150px;
+		margin: 4% 3.5%;
+	}
+
+	#send-mail{
+		width:100%
+	}
+
+	#my-info{
+		width:100%;
+	}
+}
